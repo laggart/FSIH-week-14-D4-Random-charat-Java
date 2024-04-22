@@ -9,11 +9,11 @@ public class Mayuscula_minuscula {
         System.out.println("Ingresa un texto cualquiera:");
         String texto = teclado.nextLine();
         
-        // Variables auxiliares para verificar el tipo de texto
+        // Variables auxiliares para verificar el tipo
         boolean todasMayusculas = true;
         boolean todasMinusculas = true;
         
-        // Verificar si el texto está compuesto solo de minúsculas o solo de mayúsculas
+        // Verificamos si el texto está compuesto solo de minúsculas o solo de mayúsculas
         for (int i = 0; i < texto.length(); i++) {
             char caracter = texto.charAt(i);
             
@@ -24,7 +24,7 @@ public class Mayuscula_minuscula {
             }
         }
         
-        // Determinar el tipo de texto
+        // Determinamos el tipo de texto devolviendo la funcion
         if (todasMayusculas) {
             System.out.println("El texto tiene solo de mayúsculas.");
         } else if (todasMinusculas) {
